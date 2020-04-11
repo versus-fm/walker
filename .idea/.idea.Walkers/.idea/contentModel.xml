@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\fox\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\fox\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Walkers.1871943050.00" t="ExcludeRecursive" />
+    <e p="C:\Users\fox\RiderProjects\Walkers" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="WalkerGame" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Component" t="Include">
+          <e p="Sprite.cs" t="Include" />
+          <e p="Transform.cs" t="Include" />
+          <e p="Velocity.cs" t="Include" />
+        </e>
+        <e p="Data" t="Include">
+          <e p="SpatialGrid.cs" t="Include" />
+        </e>
+        <e p="Graphics" t="Include">
+          <e p="SpriteEntry.cs" t="Include" />
+          <e p="SpriteMap.cs" t="Include" />
+          <e p="SpriteNode.cs" t="Include" />
+          <e p="SpriteRepository.cs" t="Include" />
+        </e>
+        <e p="lib" t="Include">
+          <e p="minECS.dll" t="Include" />
+        </e>
+        <e p="Logic" t="Include">
+          <e p="ContentTarget.cs" t="Include" />
+          <e p="DrawTarget.cs" t="Include" />
+          <e p="PartManager.cs" t="Include" />
+          <e p="PartTarget.cs" t="Include" />
+          <e p="UpdateTarget.cs" t="Include" />
+        </e>
+        <e p="Metadata" t="Include">
+          <e p="ComponentAttribute.cs" t="Include" />
+          <e p="GamePartAttribute.cs" t="Include" />
+          <e p="InjectAttribute.cs" t="Include" />
+          <e p="PostConstruct.cs" t="Include" />
+          <e p="ResourceProcessorAttribute.cs" t="Include" />
+          <e p="ServiceAttribute.cs" t="Include" />
+          <e p="SystemAttribute.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="WalkerGame.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ObjectGraph.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Reflection" t="Include">
+          <e p="ReflectionUtil.cs" t="Include" />
+          <e p="TypeExtension.cs" t="Include" />
+        </e>
+        <e p="res" t="Include">
+          <e p="fonts" t="Include">
+            <e p="arial.fnt" t="Include" />
+          </e>
+          <e p="textures" t="Include">
+            <e p="stone.png" t="Include" />
+          </e>
+        </e>
+        <e p="Resource" t="Include">
+          <e p="Processors" t="Include">
+            <e p="Texture2DProcessor.cs" t="Include" />
+          </e>
+          <e p="ResourceLoader.cs" t="Include" />
+          <e p="ResourcePart.cs" t="Include" />
+          <e p="ResourceProcessor.cs" t="Include" />
+        </e>
+        <e p="system" t="Include">
+          <e p="ISystem.cs" t="Include" />
+          <e p="SystemManager.cs" t="Include" />
+          <e p="SystemNode.cs" t="Include" />
+          <e p="Systems" t="Include">
+            <e p="DrawSystem.cs" t="Include" />
+            <e p="MoveSystem.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Walker.cs" t="Include" />
+        <e p="WalkerGame.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Walkers.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

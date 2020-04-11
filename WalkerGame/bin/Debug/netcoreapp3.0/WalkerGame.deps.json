@@ -1,0 +1,210 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "WalkerGame/1.0.0": {
+        "dependencies": {
+          "MonoGame.Extended": "3.7.0",
+          "MonoGame.Extended.Collisions": "3.7.0",
+          "MonoGame.Framework.DesktopGL.Core": "3.8.0.13",
+          "SimpleInjector": "4.9.2",
+          "minECS": "1.0.0.0"
+        },
+        "runtime": {
+          "WalkerGame.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.0.1": {},
+      "Microsoft.NETCore.Targets/1.0.1": {},
+      "MonoGame.Extended/3.7.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MonoGame.Extended.dll": {
+            "assemblyVersion": "3.7.0.0",
+            "fileVersion": "3.7.0.0"
+          }
+        }
+      },
+      "MonoGame.Extended.Collisions/3.7.0": {
+        "dependencies": {
+          "MonoGame.Extended": "3.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MonoGame.Extended.Collisions.dll": {
+            "assemblyVersion": "3.7.0.0",
+            "fileVersion": "3.7.0.0"
+          }
+        }
+      },
+      "MonoGame.Framework.DesktopGL.Core/3.8.0.13": {
+        "runtime": {
+          "lib/netstandard2.0/MonoGame.Framework.dll": {
+            "assemblyVersion": "3.8.0.13",
+            "fileVersion": "3.8.0.13"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libSDL2-2.0.so.0": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libopenal.so.1": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx/native/libSDL2-2.0.0.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx/native/libopenal.1.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/SDL2.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "2.0.10.0"
+          },
+          "runtimes/win-x64/native/soft_oal.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/SDL2.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "2.0.10.0"
+          },
+          "runtimes/win-x86/native/soft_oal.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
+          }
+        }
+      },
+      "SimpleInjector/4.9.2": {
+        "dependencies": {
+          "System.ComponentModel": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SimpleInjector.dll": {
+            "assemblyVersion": "4.9.2.0",
+            "fileVersion": "4.9.2.0"
+          }
+        }
+      },
+      "System.ComponentModel/4.0.1": {
+        "dependencies": {
+          "System.Runtime": "4.1.0"
+        }
+      },
+      "System.Runtime/4.1.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1"
+        }
+      },
+      "minECS/1.0.0.0": {
+        "runtime": {
+          "minECS.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WalkerGame/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2G6OjjJzwBfNOO8myRV/nFrbTw5iA+DEm0N+qUqhrOmaVtn4pC77h38I1jsXGw5VH55+dPfQsqHD0We9sCl9FQ==",
+      "path": "microsoft.netcore.platforms/1.0.1",
+      "hashPath": "microsoft.netcore.platforms.1.0.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rkn+fKobF/cbWfnnfBOQHKVKIOpxMZBvlSHkqDWgBpwGDcLRduvs3D9OLGeV6GWGvVwNlVi2CBbTjuPmtHvyNw==",
+      "path": "microsoft.netcore.targets/1.0.1",
+      "hashPath": "microsoft.netcore.targets.1.0.1.nupkg.sha512"
+    },
+    "MonoGame.Extended/3.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gnxfWcMLWke1I21T+0h8ckZnum2jzybfaDtMTk5LUaPTdLCIt4nHpRYM467JdpOte2wtUzsuTAtQtKICqYk9rg==",
+      "path": "monogame.extended/3.7.0",
+      "hashPath": "monogame.extended.3.7.0.nupkg.sha512"
+    },
+    "MonoGame.Extended.Collisions/3.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mCiNC6FajQwGgZ6DNdpjicAjJcaovxuOHrC6tbnfpotkAgY+RJBjDDNp+3R+OociB/vuaIKZljb32Mxen+78ug==",
+      "path": "monogame.extended.collisions/3.7.0",
+      "hashPath": "monogame.extended.collisions.3.7.0.nupkg.sha512"
+    },
+    "MonoGame.Framework.DesktopGL.Core/3.8.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cMsc/UZFS8Uk/a1RDc8OZ9Z2EXrEglWGcZGSvPJiWEcUC5Oo9K9uoZXaprvesM3YbyT1ItzqS4jXjTDR4qT4WA==",
+      "path": "monogame.framework.desktopgl.core/3.8.0.13",
+      "hashPath": "monogame.framework.desktopgl.core.3.8.0.13.nupkg.sha512"
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "path": "newtonsoft.json/11.0.2",
+      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
+    "SimpleInjector/4.9.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Pk2CNsqwroULLdPAhfXgyImnuDRB6wHzeOKlJxLjhHxKwErPQhH0nZdthpglwMAjJ+tlC7Z8UkIbBq1CBdQ9MQ==",
+      "path": "simpleinjector/4.9.2",
+      "hashPath": "simpleinjector.4.9.2.nupkg.sha512"
+    },
+    "System.ComponentModel/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oBZFnm7seFiVfugsIyOvQCWobNZs7FzqDV/B7tx20Ep/l3UUFCPDkdTnCNaJZTU27zjeODmy2C/cP60u3D4c9w==",
+      "path": "system.componentmodel/4.0.1",
+      "hashPath": "system.componentmodel.4.0.1.nupkg.sha512"
+    },
+    "System.Runtime/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v6c/4Yaa9uWsq+JMhnOFewrYkgdNHNG2eMKuNqRn8P733rNXeRCGvV5FkkjBXn2dbVkPXOsO0xjsEeM1q2zC0g==",
+      "path": "system.runtime/4.1.0",
+      "hashPath": "system.runtime.4.1.0.nupkg.sha512"
+    },
+    "minECS/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

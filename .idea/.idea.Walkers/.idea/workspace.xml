@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dc447c8f-2037-47dd-a382-c35a74b0d06d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Component/Velocity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Component/Sprite.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/SpriteRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Data/SpatialGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/SpriteMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/System/Systems/DrawSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/SpriteEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/ResourcePart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/D3/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/SpriteNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C8E285E-127C-40E7-9324-A48132D1C893/a0/e3a52197/EntityRegistry.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/ResourceLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/ResourceProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/2B6/RuntimeMethodInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/ComponentAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C8E285E-127C-40E7-9324-A48132D1C893/2a/7d5135a1/TypedComponentBufferBase`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/SystemAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/GamePartAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/Processors/Texture2DProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/ResourceProcessorAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Reflection/TypeExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Reflection/ReflectionUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Walker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/ServiceAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/PartTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/UpdateTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/DrawTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/minECS-master/minECS/Components/ComponentBuffersManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/ContentTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/ObjectGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/InjectAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/PostConstruct.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/PartManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/System/SystemManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/System/ISystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/System/SystemNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/System/Systems/MoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Component/Transform.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/WalkerGame/Program.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Utilities/IsoMath.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/SpriteRepository.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteReference.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteEntry.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteNode.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteMap.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/ResourceLoader.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Metadata/SystemAttribute.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Metadata/GamePartAttribute.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Metadata/ResourceProcessorAttribute.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Metadata/ServiceAttribute.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Resource/ResourceProcessor.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Logic/PartTarget.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Logic/ContentTarget.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Logic/UpdateTarget.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Reflection/ReflectionUtil.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Metadata/Inject.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Metadata/InjectAttribute.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Metadata/BaseAspectProcessor.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Metadata/TargetedAspectProcessor.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Metadata/AspectProcessor.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Metadata/PostConstruct.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Resource/ResourceLoader.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Metadata/ComponentAttribute.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Component/Dimension.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Component/Position.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Component/Sprite.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Component/Velocity.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Logic/DrawTarget.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/System/ISystem.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/System/SystemTree.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/System/SystemNode.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Logic/PartManager.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/System/SystemManager.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Component/Transform.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/System/Systems/MoveSystem.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/ObjectGraph.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Data/SpatialGrid.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Resource/ResourcePart.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Reflection/TypeExtension.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Resource/Processors/Texture2DProcessor.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteRepository.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/System/Systems/DrawSystem.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Walker.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aM8iy2WFbPZeY4aS46Y86YxhRS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="WalkerGame" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/WalkerGame/WalkerGame.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc447c8f-2037-47dd-a382-c35a74b0d06d" name="Default Changelist" comment="" />
+      <created>1586534233292</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586534233292</updated>
+      <workItem from="1586534236207" duration="107000" />
+      <workItem from="1586534448831" duration="520000" />
+      <workItem from="1586534986005" duration="43651000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state width="429" height="441" key="DebuggerActiveHint" timestamp="1586642408874">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="429" height="441" key="DebuggerActiveHint/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642408874" />
+    <state width="2517" height="380" key="GridCell.Tab.0.bottom" timestamp="1586642896022">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="380" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642896022" />
+    <state width="2517" height="380" key="GridCell.Tab.0.center" timestamp="1586642896022">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="380" key="GridCell.Tab.0.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642896022" />
+    <state width="2517" height="380" key="GridCell.Tab.0.left" timestamp="1586642896022">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="380" key="GridCell.Tab.0.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642896022" />
+    <state width="2517" height="380" key="GridCell.Tab.0.right" timestamp="1586642896022">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="380" key="GridCell.Tab.0.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642896022" />
+    <state width="2517" height="470" key="GridCell.Tab.1.bottom" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.1.center" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.1.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.1.left" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.1.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.1.right" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.1.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.2.bottom" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.2.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.2.center" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.2.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.2.left" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.2.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.2.right" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.2.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.3.bottom" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.3.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.3.center" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.3.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.3.left" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.3.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.3.right" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.3.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.4.bottom" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.4.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.4.center" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.4.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.4.left" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.4.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state width="2517" height="470" key="GridCell.Tab.4.right" timestamp="1586642491920">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="470" key="GridCell.Tab.4.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
+    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size" timestamp="1586534273872">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586534273872" />
+    <state x="1078" y="436" key="RiderGenerateDialog" timestamp="1586640617743">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1078" y="436" key="RiderGenerateDialog/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586640617743" />
+    <state x="781" y="342" key="SettingsEditor" timestamp="1586612766991">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586612766991" />
+  </component>
+</project>
