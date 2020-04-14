@@ -5,7 +5,7 @@ using WalkerGame.Graphics;
 using WalkerGame.Metadata;
 using NotImplementedException = System.NotImplementedException;
 
-namespace WalkerGame.System.Systems
+namespace WalkerGame.EntitySystem.Systems
 {
     [System]
     public class DrawSystem : ISystem

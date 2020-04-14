@@ -13,7 +13,17 @@
           <e p="Velocity.cs" t="Include" />
         </e>
         <e p="Data" t="Include">
+          <e p="GridNode.cs" t="Include" />
           <e p="SpatialGrid.cs" t="Include" />
+        </e>
+        <e p="EntitySystem" t="Include">
+          <e p="ISystem.cs" t="Include" />
+          <e p="SystemManager.cs" t="Include" />
+          <e p="SystemNode.cs" t="Include" />
+          <e p="Systems" t="Include">
+            <e p="DrawSystem.cs" t="Include" />
+            <e p="MoveSystem.cs" t="Include" />
+          </e>
         </e>
         <e p="Graphics" t="Include">
           <e p="SpriteEntry.cs" t="Include" />
@@ -21,14 +31,20 @@
           <e p="SpriteNode.cs" t="Include" />
           <e p="SpriteRepository.cs" t="Include" />
         </e>
+        <e p="Input" t="Include">
+          <e p="InputService.cs" t="Include" />
+        </e>
         <e p="lib" t="Include">
           <e p="minECS.dll" t="Include" />
         </e>
         <e p="Logic" t="Include">
+          <e p="CollisionMessageManager.cs" t="Include" />
           <e p="ContentTarget.cs" t="Include" />
           <e p="DrawTarget.cs" t="Include" />
           <e p="PartManager.cs" t="Include" />
           <e p="PartTarget.cs" t="Include" />
+          <e p="PostUpdateTarget.cs" t="Include" />
+          <e p="PreUpdateTarget.cs" t="Include" />
           <e p="UpdateTarget.cs" t="Include" />
         </e>
         <e p="Metadata" t="Include">
@@ -68,15 +84,6 @@
           <e p="ResourceLoader.cs" t="Include" />
           <e p="ResourcePart.cs" t="Include" />
           <e p="ResourceProcessor.cs" t="Include" />
-        </e>
-        <e p="system" t="Include">
-          <e p="ISystem.cs" t="Include" />
-          <e p="SystemManager.cs" t="Include" />
-          <e p="SystemNode.cs" t="Include" />
-          <e p="Systems" t="Include">
-            <e p="DrawSystem.cs" t="Include" />
-            <e p="MoveSystem.cs" t="Include" />
-          </e>
         </e>
         <e p="Walker.cs" t="Include" />
         <e p="WalkerGame.csproj" t="IncludeRecursive" />

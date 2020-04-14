@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc447c8f-2037-47dd-a382-c35a74b0d06d" name="Default Changelist" comment="" />
+    <list default="true" id="dc447c8f-2037-47dd-a382-c35a74b0d06d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Data/GridNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Input/InputService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Logic/CollisionMessageManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Logic/PostUpdateTarget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Logic/PreUpdateTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Walkers/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walkers/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Walkers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walkers/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Component/Transform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Component/Transform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Data/SpatialGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Data/SpatialGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Logic/PartManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Logic/PartManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/ObjectGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/ObjectGraph.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/System/ISystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/EntitySystem/ISystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/System/SystemManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/EntitySystem/SystemManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/System/SystemNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/EntitySystem/SystemNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/System/Systems/DrawSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/DrawSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/System/Systems/MoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/MoveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Walker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Walker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/bin/Debug/netcoreapp3.0/WalkerGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/bin/Debug/netcoreapp3.0/WalkerGame.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/bin/Debug/netcoreapp3.0/WalkerGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/bin/Debug/netcoreapp3.0/WalkerGame.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/WalkerGame/Component/Velocity.cs" root0="FORCE_HIGHLIGHTING" />
@@ -13,7 +39,7 @@
     <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/SpriteRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Data/SpatialGrid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/SpriteMap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/System/Systems/DrawSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/DrawSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/SpriteEntry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/ResourcePart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/D3/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
@@ -26,35 +52,39 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C8E285E-127C-40E7-9324-A48132D1C893/2a/7d5135a1/TypedComponentBufferBase`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/SystemAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/GamePartAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/minECS-master/minECS/Components/ComponentBuffersManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/PostUpdateTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/PreUpdateTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Input/InputService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Data/GridNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EC5D8DF9-3472-442C-9F9D-18E9177D0A3C/d2/f0e15cc9/Point.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0735A06E-85E2-4245-BABA-123B97E15F8E/11/SortedSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/CollisionMessageManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C8E285E-127C-40E7-9324-A48132D1C893/d3/0a58bce9/EntityData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/Processors/Texture2DProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/ResourceProcessorAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Reflection/TypeExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Reflection/ReflectionUtil.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Walker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/ServiceAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/PartTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/UpdateTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/DrawTarget.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/minECS-master/minECS/Components/ComponentBuffersManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/ContentTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/ObjectGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/InjectAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/PostConstruct.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/PartManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/System/SystemManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/System/ISystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/System/SystemNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/System/Systems/MoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/EntitySystem/SystemManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/EntitySystem/ISystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/EntitySystem/SystemNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/MoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Component/Transform.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WalkerGame/Program.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Utilities/IsoMath.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/SpriteRepository.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteReference.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteEntry.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteNode.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteMap.cs" />
@@ -84,22 +114,35 @@
         <option value="$PROJECT_DIR$/WalkerGame/System/ISystem.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/System/SystemTree.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/System/SystemNode.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Logic/PartManager.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/System/SystemManager.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Component/Transform.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/System/Systems/MoveSystem.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/ObjectGraph.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Data/SpatialGrid.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/Resource/ResourcePart.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/Reflection/TypeExtension.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/Resource/Processors/Texture2DProcessor.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteRepository.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/System/Systems/DrawSystem.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Logic/PreUpdate.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Logic/PostUpdateTarget.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Logic/PreUpdateTarget.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/System/SystemManager.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/Walker.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/ObjectGraph.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Logic/PartManager.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Input/InputService.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Data/Spatial.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/DrawSystem.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Component/Transform.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Data/GridNode.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Data/SpatialGrid.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Logic/CollisionMessageManager.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/MoveSystem.cs" />
+        <option value="$PROJECT_DIR$/.git/config" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1aM8iy2WFbPZeY4aS46Y86YxhRS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -108,8 +151,9 @@
   <component name="PropertiesComponent">
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RunManager">
     <configuration name="WalkerGame" type="DotNetProject" factoryName=".NET Project">
@@ -143,7 +187,7 @@
       <updated>1586534233292</updated>
       <workItem from="1586534236207" duration="107000" />
       <workItem from="1586534448831" duration="520000" />
-      <workItem from="1586534986005" duration="43651000" />
+      <workItem from="1586534986005" duration="65136000" />
     </task>
     <servers />
   </component>
@@ -152,27 +196,38 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state width="429" height="441" key="DebuggerActiveHint" timestamp="1586642408874">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="429" height="441" key="DebuggerActiveHint/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642408874" />
-    <state width="2517" height="380" key="GridCell.Tab.0.bottom" timestamp="1586642896022">
+    <state width="2517" height="380" key="GridCell.Tab.0.bottom" timestamp="1586888615084">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642896022" />
-    <state width="2517" height="380" key="GridCell.Tab.0.center" timestamp="1586642896022">
+    <state width="2517" height="380" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586888615084" />
+    <state width="2517" height="380" key="GridCell.Tab.0.center" timestamp="1586888615084">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642896022" />
-    <state width="2517" height="380" key="GridCell.Tab.0.left" timestamp="1586642896022">
+    <state width="2517" height="380" key="GridCell.Tab.0.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586888615084" />
+    <state width="2517" height="380" key="GridCell.Tab.0.left" timestamp="1586888615084">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642896022" />
-    <state width="2517" height="380" key="GridCell.Tab.0.right" timestamp="1586642896022">
+    <state width="2517" height="380" key="GridCell.Tab.0.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586888615084" />
+    <state width="2517" height="380" key="GridCell.Tab.0.right" timestamp="1586888615084">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642896022" />
+    <state width="2517" height="380" key="GridCell.Tab.0.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586888615084" />
     <state width="2517" height="470" key="GridCell.Tab.1.bottom" timestamp="1586642491920">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -241,13 +296,13 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586534273872" />
-    <state x="1078" y="436" key="RiderGenerateDialog" timestamp="1586640617743">
+    <state x="1078" y="436" key="RiderGenerateDialog" timestamp="1586810227507">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1078" y="436" key="RiderGenerateDialog/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586640617743" />
-    <state x="781" y="342" key="SettingsEditor" timestamp="1586612766991">
+    <state x="1078" y="436" key="RiderGenerateDialog/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586810227507" />
+    <state x="781" y="342" key="SettingsEditor" timestamp="1586889047355">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586612766991" />
+    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586889047355" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 
-namespace WalkerGame.System
+namespace WalkerGame.EntitySystem
 {
     public interface ISystem
     {

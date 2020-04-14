@@ -6,7 +6,7 @@ using WalkerGame.Metadata;
 using WalkerGame.Reflection;
 using NotImplementedException = System.NotImplementedException;
 
-namespace WalkerGame.System
+namespace WalkerGame.EntitySystem
 {
     [GamePart("systems")]
     public class SystemManager : UpdateTarget, DrawTarget, PostConstruct

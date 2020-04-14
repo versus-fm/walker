@@ -92,6 +92,7 @@ namespace WalkerGame
 
         protected override void Update(GameTime gameTime)
         {
+            parts.PreUpdate(gameTime);
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
                 Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
@@ -99,6 +100,7 @@ namespace WalkerGame
             parts.Update(gameTime);
             
             base.Update(gameTime);
+            parts.PostUpdate(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)

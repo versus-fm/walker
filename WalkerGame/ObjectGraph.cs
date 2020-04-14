@@ -55,6 +55,13 @@ namespace WalkerGame
             return (T)Construct(typeof(T));
         }
 
+        public object ConstructAndRegister(Type type)
+        {
+            var instance = Construct(type);
+            RegisterInstance(instance);
+            return instance;
+        }
+
         public void DoOnAttribute<T>(Action<T, Type> action) where T : Attribute
         {
             ReflectionUtil.GetTypesInAssembly(assembly).ForEach(type =>

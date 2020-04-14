@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace WalkerGame.System
+namespace WalkerGame.EntitySystem
 {
     public class SystemNode
     {
