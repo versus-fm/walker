@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
+using Svelto.ECS;
 using WalkerGame.Metadata;
 
 namespace WalkerGame.Component
 {
-    [Component(BufferType.Sparse)]
-    public struct Sprite
+    public struct Sprite : IEntityStruct
     {
         public int mapId;
         public int spriteIdx;

@@ -1,21 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
+using MonoGame.Extended;
+using Svelto.ECS;
 using WalkerGame.Data;
 using WalkerGame.Metadata;
 
 namespace WalkerGame.Component
 {
-    [Component(BufferType.Sparse)]
-    public struct Transform
+    public struct Transform : IEntityStruct, INeedEGID
     {
-        public Vector2 pos;
-        public Vector2 size;
+        public RectangleF bounds;
         public float rotation;
-        public int gridId;
-        
-
-        public Rectangle Bounds()
-        {
-            return new Rectangle(pos.ToPoint(), pos.ToPoint());
-        }
+        public EGID ID { get; set; }
     }
 }

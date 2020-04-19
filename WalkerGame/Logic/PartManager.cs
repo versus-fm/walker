@@ -15,6 +15,7 @@ namespace WalkerGame.Logic
         private List<ContentTarget> contentParts;
         private List<PostUpdateTarget> postUpdateTargets;
         private List<PreUpdateTarget> preUpdateTargets;
+        private List<ReadyTarget> readyTargets;
 
         [Inject]
         public PartManager(ObjectGraph objectGraph)
@@ -26,6 +27,7 @@ namespace WalkerGame.Logic
             contentParts = new List<ContentTarget>();
             postUpdateTargets = new List<PostUpdateTarget>();
             preUpdateTargets = new List<PreUpdateTarget>();
+            readyTargets = new List<ReadyTarget>();
         }
         public void Load()
         {
@@ -51,13 +53,20 @@ namespace WalkerGame.Logic
         {
             postUpdateTargets.ForEach(x => x.PostUpdate(gameTime));
         }
+
+        public void Ready()
+        {
+            readyTargets.ForEach(x => x.ServiceReady());
+        }
+        
         public void Post()
         {
             objectGraph.DoOnAttribute<GamePartAttribute>((attribute, type) =>
             {
                 if (type.Implements<PartTarget>())
                 {
-                    var target = objectGraph.ConstructAndRegister(type);
+                    var serviceType = attribute.ForType ?? type;
+                    var target = objectGraph.Get(serviceType);
                     if (type.Implements<DrawTarget>())
                     {
                         drawParts.Add((DrawTarget)target);
@@ -77,6 +86,10 @@ namespace WalkerGame.Logic
                     if (type.Implements<PreUpdateTarget>())
                     {
                         preUpdateTargets.Add((PreUpdateTarget)target);
+                    }
+                    if (type.Implements<ReadyTarget>())
+                    {
+                        readyTargets.Add((ReadyTarget)target);
                     }
                 }
             });

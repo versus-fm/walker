@@ -1,0 +1,8 @@
+C:\Users\fox\RiderProjects\Walkers\DingoFont\obj\Debug\netcoreapp3.0\DingoFont.csprojAssemblyReference.cache
+C:\Users\fox\RiderProjects\Walkers\DingoFont\obj\Debug\netcoreapp3.0\DingoFont.AssemblyInfoInputs.cache
+C:\Users\fox\RiderProjects\Walkers\DingoFont\obj\Debug\netcoreapp3.0\DingoFont.AssemblyInfo.cs
+C:\Users\fox\RiderProjects\Walkers\DingoFont\bin\Debug\netcoreapp3.0\DingoFont.deps.json
+C:\Users\fox\RiderProjects\Walkers\DingoFont\bin\Debug\netcoreapp3.0\DingoFont.dll
+C:\Users\fox\RiderProjects\Walkers\DingoFont\bin\Debug\netcoreapp3.0\DingoFont.pdb
+C:\Users\fox\RiderProjects\Walkers\DingoFont\obj\Debug\netcoreapp3.0\DingoFont.dll
+C:\Users\fox\RiderProjects\Walkers\DingoFont\obj\Debug\netcoreapp3.0\DingoFont.pdb

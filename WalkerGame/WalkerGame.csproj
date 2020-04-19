@@ -3,6 +3,7 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp3.0</TargetFramework>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 
     <ItemGroup>
@@ -13,23 +14,45 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="lib" />
-      <Folder Include="res\textures" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Reference Include="minECS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>lib\minECS.dll</HintPath>
-      </Reference>
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Update="res\fonts\arial.fnt">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
       <None Update="res\textures\stone.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+      <None Update="res\spritesheet-definitions\characters.spritesheet">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="res\textures\characters.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="res\textures\sheet.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="res\textures\swoosh.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="res\spritesheet-definitions\sheet.spritesheet">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="res\fonts\roboto.ttf">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="freetype.dll">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="res\fonts\emoji.otf">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="res\fonts\roboto.font">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DingoFont\DingoFont.csproj" />
+      <ProjectReference Include="..\Svelto.ECS\Svelto.ECS\Svelto.ECS.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Util" />
     </ItemGroup>
 
 </Project>

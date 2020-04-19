@@ -2,7 +2,7 @@
 using WalkerGame.Metadata;
 using NotImplementedException = System.NotImplementedException;
 
-namespace WalkerGame
+namespace WalkerGame.Resource
 {
     [GamePart("content")]
     public class ResourcePart : ContentTarget

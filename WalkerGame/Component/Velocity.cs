@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
+using Svelto.ECS;
 using WalkerGame.Metadata;
 
 namespace WalkerGame.Component
 {
-    [Component(BufferType.Sparse)]
-    public struct Velocity
+    public struct Velocity : IEntityStruct
     {
         public Vector2 vel;
     }

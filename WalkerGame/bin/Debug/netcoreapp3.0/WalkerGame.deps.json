@@ -8,11 +8,12 @@
     ".NETCoreApp,Version=v3.0": {
       "WalkerGame/1.0.0": {
         "dependencies": {
+          "DingoFont": "1.0.0",
           "MonoGame.Extended": "3.7.0",
           "MonoGame.Extended.Collisions": "3.7.0",
           "MonoGame.Framework.DesktopGL.Core": "3.8.0.13",
           "SimpleInjector": "4.9.2",
-          "minECS": "1.0.0.0"
+          "Svelto.ECS": "1.0.0"
         },
         "runtime": {
           "WalkerGame.dll": {}
@@ -116,18 +117,38 @@
           "System.Runtime": "4.1.0"
         }
       },
+      "System.Memory/4.5.2": {},
       "System.Runtime/4.1.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
           "Microsoft.NETCore.Targets": "1.0.1"
         }
       },
-      "minECS/1.0.0.0": {
+      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview8.19405.3": {},
+      "DingoFont/1.0.0": {
+        "dependencies": {
+          "MonoGame.Framework.DesktopGL.Core": "3.8.0.13"
+        },
         "runtime": {
-          "minECS.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "DingoFont.dll": {}
+        }
+      },
+      "Svelto.Common/1.0.0": {
+        "dependencies": {
+          "System.Memory": "4.5.2"
+        },
+        "runtime": {
+          "Svelto.Common.dll": {}
+        }
+      },
+      "Svelto.ECS/1.0.0": {
+        "dependencies": {
+          "Svelto.Common": "1.0.0",
+          "System.Memory": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview8.19405.3"
+        },
+        "runtime": {
+          "Svelto.ECS.dll": {}
         }
       }
     }
@@ -194,6 +215,13 @@
       "path": "system.componentmodel/4.0.1",
       "hashPath": "system.componentmodel.4.0.1.nupkg.sha512"
     },
+    "System.Memory/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fvq1GNmUFwbKv+aLVYYdgu/+gc8Nu9oFujOxIjPrsf+meis9JBzTPDL6aP/eeGOz9yPj6rRLUbOjKMpsMEWpNg==",
+      "path": "system.memory/4.5.2",
+      "hashPath": "system.memory.4.5.2.nupkg.sha512"
+    },
     "System.Runtime/4.1.0": {
       "type": "package",
       "serviceable": true,
@@ -201,8 +229,25 @@
       "path": "system.runtime/4.1.0",
       "hashPath": "system.runtime.4.1.0.nupkg.sha512"
     },
-    "minECS/1.0.0.0": {
-      "type": "reference",
+    "System.Runtime.CompilerServices.Unsafe/4.6.0-preview8.19405.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1EHM+Tp0/RlDu4cQpYl/+OsikV6DqVK9WXLZenKA0jNVgAvmKG4eD7czEIDR1w3IQjqywhIdIrqm1C4wJutVnA==",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0-preview8.19405.3",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.6.0-preview8.19405.3.nupkg.sha512"
+    },
+    "DingoFont/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Svelto.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Svelto.ECS/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

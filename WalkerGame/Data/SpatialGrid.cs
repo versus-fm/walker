@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
+using MonoGame.Extended;
+using Svelto.ECS;
 using WalkerGame.Metadata;
+
+using NodeType = Svelto.ECS.EGID;
 
 namespace WalkerGame.Data
 {
@@ -9,29 +13,30 @@ namespace WalkerGame.Data
     public class SpatialGrid
     {
         private const int CELL_SIZE = 32;
-        private Dictionary<Point, GridNode> nodes;
+        private Dictionary<Point2, GridNode<NodeType>> nodes;
 
-        private SpatialGrid()
+        [Inject]
+        public SpatialGrid()
         {
-            nodes = new Dictionary<Point, GridNode>();
+            nodes = new Dictionary<Point2, GridNode<NodeType>>();
         }
 
-        public void InsertEntity(ulong entity, ref Rectangle bounds)
+        public void InsertEntity(NodeType entity, ref RectangleF bounds)
         {
-            var p = new Point(bounds.X / CELL_SIZE, bounds.Y / CELL_SIZE);
-            var pEnd = new Point((bounds.X + bounds.Width) / CELL_SIZE, (bounds.Y + bounds.Height) / CELL_SIZE);
+            var p = new Point2(bounds.X / CELL_SIZE, bounds.Y / CELL_SIZE);
+            var pEnd = new Point2((bounds.X + bounds.Width) / CELL_SIZE, (bounds.Y + bounds.Height) / CELL_SIZE);
             for (; p.X <= pEnd.X; p.X++)
             {
                 for (; p.Y <= pEnd.Y; p.Y++)
                 {
-                    GridNode gridNode;
+                    GridNode<NodeType> gridNode;
                     if (nodes.ContainsKey(p))
                     {
                         gridNode = nodes[p];
                     }
                     else
                     {
-                        gridNode = new GridNode();
+                        gridNode = new GridNode<NodeType>();
                         nodes.Add(p, gridNode);
                     }
 
@@ -40,10 +45,10 @@ namespace WalkerGame.Data
             }
         }
 
-        public void RemoveEntity(ulong entity, ref Rectangle bounds)
+        public void RemoveEntity(NodeType  entity, ref RectangleF bounds)
         {
-            var p = new Point(bounds.X / CELL_SIZE, bounds.Y / CELL_SIZE);
-            var pEnd = new Point((bounds.X + bounds.Width) / CELL_SIZE, (bounds.Y + bounds.Height) / CELL_SIZE);
+            var p = new Point2(bounds.X / CELL_SIZE, bounds.Y / CELL_SIZE);
+            var pEnd = new Point2((bounds.X + bounds.Width) / CELL_SIZE, (bounds.Y + bounds.Height) / CELL_SIZE);
             for (; p.X <= pEnd.X; p.X++)
             {
                 for (; p.Y <= pEnd.Y; p.Y++)
@@ -56,7 +61,7 @@ namespace WalkerGame.Data
             }
         }
 
-        public void MoveEntity(ulong entity, ref Rectangle oldBounds, ref Rectangle newBounds)
+        public void MoveEntity(NodeType  entity, ref RectangleF oldBounds, ref RectangleF newBounds)
         {
             var oldPoints = GetPointRange(ref oldBounds);
             var newPoints = GetPointRange(ref newBounds);
@@ -68,18 +73,18 @@ namespace WalkerGame.Data
             InsertEntity(entity, ref newBounds);
         }
 
-        private (Point p, Point pEnd) GetPointRange(ref Rectangle bounds)
+        private (Point2 p, Point2 pEnd) GetPointRange(ref RectangleF bounds)
         {
-            var p = new Point(bounds.X / CELL_SIZE, bounds.Y / CELL_SIZE);
-            var pEnd = new Point((bounds.X + bounds.Width) / CELL_SIZE, (bounds.Y + bounds.Height) / CELL_SIZE);
+            var p = new Point2(bounds.X / CELL_SIZE, bounds.Y / CELL_SIZE);
+            var pEnd = new Point2((bounds.X + bounds.Width) / CELL_SIZE, (bounds.Y + bounds.Height) / CELL_SIZE);
             return (p, pEnd);
         }
 
-        public void QueryRegion(SortedSet<ulong> entityList, ref Rectangle region)
+        public void QueryRegion(SortedSet<NodeType> entityList, ref RectangleF region)
         {
             entityList.Clear();
-            var p = new Point(region.X / CELL_SIZE, region.Y / CELL_SIZE);
-            var pEnd = new Point((region.X + region.Width) / CELL_SIZE, (region.Y + region.Height) / CELL_SIZE);
+            var p = new Point2(region.X / CELL_SIZE, region.Y / CELL_SIZE);
+            var pEnd = new Point2((region.X + region.Width) / CELL_SIZE, (region.Y + region.Height) / CELL_SIZE);
             for (; p.X <= pEnd.X; p.X++)
             {
                 for (; p.Y <= pEnd.Y; p.Y++)

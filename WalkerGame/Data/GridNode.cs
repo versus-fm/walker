@@ -2,13 +2,13 @@
 
 namespace WalkerGame.Data
 {
-    public class GridNode
+    public class GridNode<T> where T : struct
     {
-        private SortedSet<ulong> entities;
+        private SortedSet<T> entities;
 
         public GridNode()
         {
-            entities = new SortedSet<ulong>();
+            entities = new SortedSet<T>();
         }
 
         public bool Empty()
@@ -16,22 +16,22 @@ namespace WalkerGame.Data
             return entities.Count == 0;
         }
 
-        public bool Insert(ulong entity)
+        public bool Insert(T entity)
         {
             return entities.Add(entity);
         }
 
-        public bool Remove(ulong entity)
+        public bool Remove(T entity)
         {
             return entities.Remove(entity);
         }
 
-        public SortedSet<ulong> GetEntities()
+        public SortedSet<T> GetEntities()
         {
             return entities;
         }
 
-        public void Merge(SortedSet<ulong> entityList)
+        public void Merge(SortedSet<T> entityList)
         {
             entityList.UnionWith(entities);
         }

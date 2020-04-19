@@ -2,28 +2,115 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc447c8f-2037-47dd-a382-c35a74b0d06d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalkerGame/Data/GridNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalkerGame/Input/InputService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalkerGame/Logic/CollisionMessageManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalkerGame/Logic/PostUpdateTarget.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalkerGame/Logic/PreUpdateTarget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/Font/GlyphData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/FontMetrics.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/FreeTypeException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/FreeTypeFace.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/FreeTypeLibrary.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/FreeTypeNumbers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/FreeTypeOutlineProcessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTBitmap.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTBoundingBox.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTFace.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTGeneric.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTGlyphSlot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTLayerIterator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTMetrics.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTOutline.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTOutlineFuncs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTPixelMode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTVector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/LoadFlags.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeType/Numerics/Fixed26Dot6.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/FreeTypeNative.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/Managed/FreeType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/Math/VectorMathHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DingoFont/Math/VectorStructures.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Svelto.ECS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/EntitySystem/EntityGroups.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Graphics/Font.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Graphics/FontRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Graphics/GlyphEntry.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Input/ControllerEventArgs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Input/IInputService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Input/InputAxis.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Input/MouseButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Input/XInputService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Logic/ReadyTarget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Logic/SystemMessage/Collision/CollisionMessageChannel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Logic/SystemMessage/Collision/CollisionMessageManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Logic/SystemMessage/Collision/CollisionSubscriber.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Metadata/HintAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Metadata/Hinting/EnvAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Metadata/Hinting/HintType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Metadata/SubscribeAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Resource/FontCollectionDefinition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Resource/Processors/FontCollectionProcessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Resource/Processors/FontProcessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Resource/Processors/SpritesheetProcessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Resource/ResourceFileStreamProcessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/Resource/SpritesheetDefinition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/freetype.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/res/fonts/emoji.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/res/fonts/roboto.font" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/res/fonts/roboto.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/res/spritesheet-definitions/characters.spritesheet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/res/spritesheet-definitions/sheet.spritesheet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/res/textures/characters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/res/textures/sheet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalkerGame/res/textures/swoosh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walkers/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walkers/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Walkers/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walkers/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walkers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walkers/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Component/Sprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Component/Sprite.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WalkerGame/Component/Transform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Component/Transform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Component/Velocity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Component/Velocity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Data/GridNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Data/GridNode.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WalkerGame/Data/SpatialGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Data/SpatialGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/EntitySystem/ISystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/EntitySystem/SystemManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/EntitySystem/SystemNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/DrawSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/DrawSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/MoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/MoveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Graphics/SpriteMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Graphics/SpriteMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Graphics/SpriteRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Graphics/SpriteRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Input/InputService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Logic/CollisionMessageManager.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WalkerGame/Logic/PartManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Logic/PartManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Metadata/ComponentAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Metadata/GamePartAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Metadata/GamePartAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Metadata/ResourceProcessorAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Metadata/ResourceProcessorAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Metadata/ServiceAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Metadata/ServiceAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Metadata/SystemAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Metadata/SystemAttribute.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WalkerGame/ObjectGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/ObjectGraph.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WalkerGame/System/ISystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/EntitySystem/ISystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WalkerGame/System/SystemManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/EntitySystem/SystemManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WalkerGame/System/SystemNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/EntitySystem/SystemNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WalkerGame/System/Systems/DrawSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/DrawSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WalkerGame/System/Systems/MoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/MoveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Reflection/TypeExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Reflection/TypeExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Resource/Processors/Texture2DProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Resource/Processors/Texture2DProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Resource/ResourceLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Resource/ResourceLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Resource/ResourcePart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Resource/ResourcePart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/Resource/ResourceProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Resource/ResourceProcessor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WalkerGame/Walker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/Walker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/WalkerGame.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/WalkerGame.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/bin/Debug/netcoreapp3.0/WalkerGame.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/bin/Debug/netcoreapp3.0/WalkerGame.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WalkerGame/bin/Debug/netcoreapp3.0/WalkerGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/bin/Debug/netcoreapp3.0/WalkerGame.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WalkerGame/bin/Debug/netcoreapp3.0/WalkerGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/bin/Debug/netcoreapp3.0/WalkerGame.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/bin/Debug/netcoreapp3.0/minECS.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/bin/Debug/netcoreapp3.0/res/fonts/arial.fnt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/bin/Debug/netcoreapp3.0/res/textures/stone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/lib/minECS.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/obj/Debug/netcoreapp3.0/WalkerGame.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/obj/WalkerGame.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/obj/WalkerGame.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/obj/WalkerGame.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/obj/WalkerGame.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerGame/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/res/fonts/arial.fnt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalkerGame/res/textures/stone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Walkers.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Walkers.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,40 +121,63 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeTypeNative.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Component/Velocity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/Font/GlyphData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Svelto.ECS/Svelto.ECS/EGID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Component/Sprite.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/SpriteRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/Data/SpatialGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Svelto.ECS/Svelto.ECS/EnginesRoot.Engines.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/SpriteMap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/DrawSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/SpriteEntry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/ResourcePart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/D3/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/SpriteNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C8E285E-127C-40E7-9324-A48132D1C893/a0/e3a52197/EntityRegistry.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/ResourceLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/ResourceProcessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/2B6/RuntimeMethodInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/ComponentAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Svelto.ECS/Svelto.ECS/EntityFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/LoadFlags.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/FreeTypeFace.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C8E285E-127C-40E7-9324-A48132D1C893/2a/7d5135a1/TypedComponentBufferBase`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/SystemAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/GamePartAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTFace.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTBitmap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTVector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTGeneric.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTMetrics.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Svelto.ECS/Svelto.ECS/IEntitiesDB.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTOutline.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTGlyphSlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTBoundingBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTOutlineFuncs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Svelto.ECS/Svelto.ECS/IEntityFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Svelto.ECS/Svelto.ECS/IEntityStruct.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/minECS-master/minECS/Components/ComponentBuffersManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/PostUpdateTarget.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/PreUpdateTarget.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/Input/InputService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/Data/GridNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EC5D8DF9-3472-442C-9F9D-18E9177D0A3C/d2/f0e15cc9/Point.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0735A06E-85E2-4245-BABA-123B97E15F8E/11/SortedSet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/CollisionMessageManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C8E285E-127C-40E7-9324-A48132D1C893/d3/0a58bce9/EntityData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Svelto.ECS/Svelto.ECS/IQueryingEntitiesEngine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/FreeTypeLibrary.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/FreeTypeNumbers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/FreeTypeException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/FreeTypeOutlineProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/Math/VectorMathHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/Math/VectorStructures.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Svelto.ECS/Svelto.ECS/Serialization/SerializableEntityDescriptor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/Numerics/Fixed26Dot6.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Svelto.ECS/Svelto.ECS/Serialization/SimpleSerializationData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/Managed/FreeType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/11/Array.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/Processors/Texture2DProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/ResourceProcessorAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/FontRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Reflection/TypeExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Reflection/ReflectionUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/Processors/FontProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Walker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/ServiceAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/ResourceFileStreamProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/PartTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/UpdateTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/DrawTarget.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,66 +186,106 @@
     <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/InjectAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/PostConstruct.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/PartManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/EntitySystem/SystemManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/EntitySystem/ISystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WalkerGame/EntitySystem/SystemNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/MoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/Font.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerGame/Component/Transform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTPixelMode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/Processors/FontCollectionProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/FontCollectionDefinition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/res/fonts/roboto.font" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/3D5/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DingoFont/FreeType/FontMetrics.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/EntitySystem/EntityGroups.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Data/SpatialGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/DrawSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/ResourcePart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Graphics/GlyphEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/SystemMessage/Collision/CollisionMessageChannel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/SystemMessage/Collision/CollisionSubscriber.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/SubscribeAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/ReadyTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/2B6/RuntimeMethodInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/947CFA9E-93C5-4D21-8EE6-CD975672A1F8/3DC/List.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CCF0528-817E-475E-96AB-D6BCBB8E4301/11/5b87c799/InstanceProducer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CCF0528-817E-475E-96AB-D6BCBB8E4301/3c/418f6ae5/Container.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Input/InputAxis.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Input/ControllerEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Input/MouseButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Input/IInputService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/HintAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Svelto.ECS/Svelto.Common/ObjectPool/Unity/PoolDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/Hinting/HintType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Metadata/Hinting/EnvAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/Processors/SpritesheetProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Svelto.ECS/Svelto.Common/Utilities/FastInvoke.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/res/spritesheet-definitions/characters.spritesheet" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Svelto.ECS/Svelto.Common/Utilities/NetFXCoreWrappers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/PostUpdateTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/PreUpdateTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Resource/SpritesheetDefinition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Input/XInputService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Data/GridNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EC5D8DF9-3472-442C-9F9D-18E9177D0A3C/d2/f0e15cc9/Point.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Svelto.ECS/Svelto.Common/DataStructures/FasterList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0735A06E-85E2-4245-BABA-123B97E15F8E/11/SortedSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/Logic/SystemMessage/Collision/CollisionMessageManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WalkerGame/res/spritesheet-definitions/sheet.spritesheet" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C8E285E-127C-40E7-9324-A48132D1C893/d3/0a58bce9/EntityData.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteEntry.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteNode.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteMap.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/ResourceLoader.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Metadata/SystemAttribute.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/Metadata/GamePartAttribute.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Metadata/ResourceProcessorAttribute.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Metadata/ServiceAttribute.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Resource/ResourceProcessor.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Logic/PartTarget.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Logic/ContentTarget.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Logic/UpdateTarget.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Reflection/ReflectionUtil.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Metadata/Inject.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Metadata/InjectAttribute.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Metadata/BaseAspectProcessor.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Metadata/TargetedAspectProcessor.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Metadata/AspectProcessor.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Metadata/PostConstruct.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Resource/ResourceLoader.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Metadata/ComponentAttribute.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Component/Dimension.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Component/Position.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Component/Sprite.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Component/Velocity.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Logic/DrawTarget.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/System/ISystem.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/System/SystemTree.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/System/SystemNode.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/System/Systems/MoveSystem.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Resource/ResourcePart.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Reflection/TypeExtension.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Resource/Processors/Texture2DProcessor.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteRepository.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/System/Systems/DrawSystem.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Logic/PreUpdate.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Logic/PostUpdateTarget.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Logic/PreUpdateTarget.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/System/SystemManager.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Walker.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/ObjectGraph.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Logic/PartManager.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Input/InputService.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Data/Spatial.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/DrawSystem.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Component/Transform.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Data/GridNode.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Data/SpatialGrid.cs" />
-        <option value="$PROJECT_DIR$/WalkerGame/Logic/CollisionMessageManager.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Logic/SystemMessage/Collision/CollisionMessageManager.cs" />
         <option value="$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/MoveSystem.cs" />
-        <option value="$PROJECT_DIR$/.git/config" />
+        <option value="$PROJECT_DIR$/WalkerGame/Input/MouseButton.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Metadata/ResourceProcessorAttribute.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/res/spritesheet-definitions/anim.spritesheet.json" />
+        <option value="$PROJECT_DIR$/WalkerGame/res/spritesheet-definitions/anim.spritesheet" />
+        <option value="$PROJECT_DIR$/WalkerGame/res/spritesheet-definitions/characters.spritesheet" />
+        <option value="$PROJECT_DIR$/WalkerGame/res/spritesheet-definitions/sheet.spritesheet.json" />
+        <option value="$PROJECT_DIR$/DingoFont/Program.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTOutline.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/Math/VectorMathHelper.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/Font/FontInstance.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/Math/VectorStructures.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/Numerics/Fixed26Dot6.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/FreeType/Numerics/Fixed26Dot6.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/Managed/Face.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/Managed/Freetype.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/IDisposableCopy.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/FreeType/FreeTypeLibrary.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/Managed/FreeType.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Resource/ResourceProcessor.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Resource/ResourceFileStreamProcessor.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Resource/Processors/SpritesheetProcessor.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Resource/Processors/Texture2DProcessor.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Resource/ResourceLoader.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/FreeType/LoadFlags.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Resource/SpritesheetDefinition.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTGlyphSlot.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTPixelMode.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTBitmap.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/res/fonts/roboto.font.json" />
+        <option value="$PROJECT_DIR$/WalkerGame/Resource/Processors/FontCollectionProcessor.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Resource/Processors/FontProcessor.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/FreeType/FontMetrics.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Resource/FontCollectionDefinition.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/FreeTypeNative.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/FreeType/InternalStructure/FTFace.cs" />
+        <option value="$PROJECT_DIR$/DingoFont/FreeType/FreeTypeFace.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Graphics/GlyphEntry.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Graphics/FontRepository.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Graphics/Font.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Walker.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Logic/ReadyTarget.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Logic/PartManager.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteMap.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Reflection/TypeExtension.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/res/fonts/roboto.font" />
+        <option value="$PROJECT_DIR$/WalkerGame/EntitySystem/Systems/DrawSystem.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/Graphics/SpriteRepository.cs" />
+        <option value="$PROJECT_DIR$/WalkerGame/res/spritesheet-definitions/sheet.spritesheet" />
       </list>
     </option>
   </component>
@@ -153,7 +303,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RunManager">
     <configuration name="WalkerGame" type="DotNetProject" factoryName=".NET Project">
@@ -187,7 +337,8 @@
       <updated>1586534233292</updated>
       <workItem from="1586534236207" duration="107000" />
       <workItem from="1586534448831" duration="520000" />
-      <workItem from="1586534986005" duration="65136000" />
+      <workItem from="1586534986005" duration="73117000" />
+      <workItem from="1587156301163" duration="60039000" />
     </task>
     <servers />
   </component>
@@ -201,108 +352,121 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="429" height="441" key="DebuggerActiveHint" timestamp="1586642408874">
+    <state width="1067" height="683" key="DebuggerActiveHint" timestamp="1587308584582">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="429" height="441" key="DebuggerActiveHint/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642408874" />
-    <state width="2517" height="380" key="GridCell.Tab.0.bottom" timestamp="1586888615084">
+    <state width="1067" height="683" key="DebuggerActiveHint/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587308584582" />
+    <state width="2517" height="380" key="GridCell.Tab.0.bottom" timestamp="1587320915693">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586888615084" />
-    <state width="2517" height="380" key="GridCell.Tab.0.center" timestamp="1586888615084">
+    <state width="2517" height="380" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587320915693" />
+    <state width="2517" height="380" key="GridCell.Tab.0.center" timestamp="1587320915693">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586888615084" />
-    <state width="2517" height="380" key="GridCell.Tab.0.left" timestamp="1586888615084">
+    <state width="2517" height="380" key="GridCell.Tab.0.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587320915693" />
+    <state width="2517" height="380" key="GridCell.Tab.0.left" timestamp="1587320915692">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586888615084" />
-    <state width="2517" height="380" key="GridCell.Tab.0.right" timestamp="1586888615084">
+    <state width="2517" height="380" key="GridCell.Tab.0.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587320915692" />
+    <state width="2517" height="380" key="GridCell.Tab.0.right" timestamp="1587320915693">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="380" key="GridCell.Tab.0.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586888615084" />
-    <state width="2517" height="470" key="GridCell.Tab.1.bottom" timestamp="1586642491920">
+    <state width="2517" height="380" key="GridCell.Tab.0.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587320915693" />
+    <state width="2517" height="470" key="GridCell.Tab.1.bottom" timestamp="1587309732757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.1.center" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732757" />
+    <state width="2517" height="470" key="GridCell.Tab.1.center" timestamp="1587309732757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.1.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.1.left" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.1.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732757" />
+    <state width="2517" height="470" key="GridCell.Tab.1.left" timestamp="1587309732757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.1.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.1.right" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.1.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732757" />
+    <state width="2517" height="470" key="GridCell.Tab.1.right" timestamp="1587309732757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.1.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.2.bottom" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.1.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732757" />
+    <state width="2517" height="470" key="GridCell.Tab.2.bottom" timestamp="1587309732757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.2.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.2.center" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.2.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732757" />
+    <state width="2517" height="470" key="GridCell.Tab.2.center" timestamp="1587309732757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.2.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.2.left" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.2.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732757" />
+    <state width="2517" height="470" key="GridCell.Tab.2.left" timestamp="1587309732757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.2.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.2.right" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.2.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732757" />
+    <state width="2517" height="470" key="GridCell.Tab.2.right" timestamp="1587309732757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.2.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.3.bottom" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.2.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732757" />
+    <state width="2517" height="470" key="GridCell.Tab.3.bottom" timestamp="1587309732758">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.3.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.3.center" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.3.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732758" />
+    <state width="2517" height="470" key="GridCell.Tab.3.center" timestamp="1587309732757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.3.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.3.left" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.3.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732757" />
+    <state width="2517" height="470" key="GridCell.Tab.3.left" timestamp="1587309732757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.3.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.3.right" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.3.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732757" />
+    <state width="2517" height="470" key="GridCell.Tab.3.right" timestamp="1587309732758">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.3.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.4.bottom" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.3.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732758" />
+    <state width="2517" height="470" key="GridCell.Tab.4.bottom" timestamp="1587309732758">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.4.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.4.center" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.4.bottom/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732758" />
+    <state width="2517" height="470" key="GridCell.Tab.4.center" timestamp="1587309732758">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.4.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.4.left" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.4.center/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732758" />
+    <state width="2517" height="470" key="GridCell.Tab.4.left" timestamp="1587309732758">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.4.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state width="2517" height="470" key="GridCell.Tab.4.right" timestamp="1586642491920">
+    <state width="2517" height="470" key="GridCell.Tab.4.left/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732758" />
+    <state width="2517" height="470" key="GridCell.Tab.4.right" timestamp="1587309732758">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="470" key="GridCell.Tab.4.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586642491920" />
-    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size" timestamp="1586534273872">
+    <state width="2517" height="470" key="GridCell.Tab.4.right/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587309732758" />
+    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size" timestamp="1587247709239">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586534273872" />
-    <state x="1078" y="436" key="RiderGenerateDialog" timestamp="1586810227507">
+    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587247709239" />
+    <state x="1078" y="436" key="RiderGenerateDialog" timestamp="1587288011485">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1078" y="436" key="RiderGenerateDialog/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586810227507" />
-    <state x="781" y="342" key="SettingsEditor" timestamp="1586889047355">
+    <state x="1078" y="436" key="RiderGenerateDialog/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587288011485" />
+    <state x="781" y="342" key="SettingsEditor" timestamp="1587292772040">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1586889047355" />
+    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587292772040" />
+    <state x="959" y="274" width="642" height="852" key="find.popup" timestamp="1587248339233">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="959" y="274" width="642" height="852" key="find.popup/0.0.2560.1400/2560.240.1920.1040@0.0.2560.1400" timestamp="1587248339233" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="DingoFont.FreeType.InternalStructure.FTFace" fieldName="autohint" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

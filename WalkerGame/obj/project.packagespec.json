@@ -15,7 +15,14 @@
     },
     "frameworks": {
       "netcoreapp3.0": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\fox\\RiderProjects\\Walkers\\DingoFont\\DingoFont.csproj": {
+            "projectPath": "C:\\Users\\fox\\RiderProjects\\Walkers\\DingoFont\\DingoFont.csproj"
+          },
+          "C:\\Users\\fox\\RiderProjects\\Walkers\\Svelto.ECS\\Svelto.ECS\\Svelto.ECS.csproj": {
+            "projectPath": "C:\\Users\\fox\\RiderProjects\\Walkers\\Svelto.ECS\\Svelto.ECS\\Svelto.ECS.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

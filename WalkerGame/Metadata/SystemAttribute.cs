@@ -2,10 +2,10 @@
 
 namespace WalkerGame.Metadata
 {
-    public class SystemAttribute : Attribute
+    public class SystemAttribute : GamePartAttribute
     {
         public Type RunBefore { get; }
-        public SystemAttribute(Type runBefore = null)
+        public SystemAttribute(string name, Type runBefore = null) : base(name)
         {
             RunBefore = runBefore;
         }

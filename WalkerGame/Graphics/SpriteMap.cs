@@ -6,9 +6,9 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace WalkerGame.Graphics
 {
-    public class SpriteMap
+    public class SpriteMap : IDisposable
     {
-        public const int MAP_SIZE = 1024;
+        private int mapSize;
 
 
         private readonly GraphicsDevice graphicsDevice;
@@ -20,16 +20,18 @@ namespace WalkerGame.Graphics
         private Texture2D map;
         private SpriteNode root;
 
-        public SpriteMap(GraphicsDevice graphicsDevice)
+        public SpriteMap(GraphicsDevice graphicsDevice, int mapSize = 1024)
         {
             this.graphicsDevice = graphicsDevice;
             spriteCount = 0;
             regions = new Rectangle[256];
             regionIndices = new Dictionary<string, int>();
-            map = new Texture2D(graphicsDevice, MAP_SIZE, MAP_SIZE);
-            sheetData = new Color[MAP_SIZE * MAP_SIZE];
+            map = new Texture2D(graphicsDevice, mapSize, mapSize);
+            sheetData = new Color[mapSize * mapSize];
 
-            root = new SpriteNode(0, 0, MAP_SIZE, MAP_SIZE);
+            root = new SpriteNode(0, 0, mapSize, mapSize);
+
+            this.mapSize = mapSize;
         }
 
         public ref readonly Rectangle GetRegion(int index)
@@ -54,11 +56,40 @@ namespace WalkerGame.Graphics
             return map;
         }
 
+        public bool Subdivide(string name, int width, int height, params KeyValuePair<string, int>[] pairs)
+        {
+            if (HasRegion(name))
+            {
+                var map = new Dictionary<int, string>(pairs.Select(pair => new KeyValuePair<int, string>(pair.Value, pair.Key)));
+                var region = GetRegion(name);
+                var w = region.Width / width;
+                var totalImages = (region.Width / width) * (region.Height / height);
+
+                for (int i = 0; i < totalImages; i++)
+                {
+                    var x = i % w;
+                    var y = i / w;
+                    var subname = map.GetValueOrDefault(i, $"{name}-{i}");
+                    var newIdx = AddRegion(new Rectangle(x * width, y * height, width, height));
+                    regionIndices[subname] = newIdx;
+                }
+
+                return true;
+            }
+
+            return false;
+        }
+
         private void CopyTextureRegion(Texture2D texture2D, Point pos)
         {
-            var box = new Rectangle(pos, texture2D.Bounds.Size);
             var textureData = new Color[texture2D.Width * texture2D.Height];
             texture2D.GetData(textureData);
+            CopyTextureRegion(textureData, texture2D.Width, texture2D.Height, pos);
+        }
+        
+        private void CopyTextureRegion(Color[] colorData, int width, int height, Point pos)
+        {
+            var box = new Rectangle(pos, new Point(width, height));
             map.GetData(sheetData);
 
             for (int x = box.X; x < box.Right; x++)
@@ -70,11 +101,28 @@ namespace WalkerGame.Graphics
                     var di = dx + box.Width * dy;
                     var idx = x + map.Width * y;
 
-                    sheetData[idx] = textureData[di];
+                    sheetData[idx] = colorData[di];
                 }
             }
             
             map.SetData(sheetData);
+        }
+
+        public bool Place(Color[] colorData, int width, int height, out int index)
+        {
+            var block = new Rectangle(0, 0, width, height);
+            var node = FindNode(root, block.Width, block.Height);
+            if (node != null)
+            {
+                var fit = SplitNode(node, block.Width, block.Height);
+                var region = new Rectangle(fit.x, fit.y, block.Width, block.Height);
+                index = AddRegion(region);
+                CopyTextureRegion(colorData, width, height, new Point(fit.x, fit.y));
+                return true;
+            }
+
+            index = -1;
+            return false;
         }
 
         public bool Place(List<SpriteEntry> sprites, int startIndex, out int packed)
@@ -139,6 +187,11 @@ namespace WalkerGame.Graphics
             var newArr = new Rectangle[regions.Length * 2];
             Array.Copy(regions, newArr, spriteCount);
             regions = newArr;
+        }
+
+        public void Dispose()
+        {
+            map?.Dispose();
         }
     }
 }

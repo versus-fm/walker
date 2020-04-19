@@ -1,42 +1,54 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 using WalkerGame.Component;
 using WalkerGame.Graphics;
+using WalkerGame.Input;
+using WalkerGame.Logic;
 using WalkerGame.Metadata;
+using WalkerGame.Metadata.Hinting;
+using WalkerGame.Reflection;
 using NotImplementedException = System.NotImplementedException;
 
 namespace WalkerGame.EntitySystem.Systems
 {
-    [System]
-    public class DrawSystem : ISystem
+    [System("draw_system")]
+    public class DrawSystem : DrawTarget, UpdateTarget, ReadyTarget
     {
-        private readonly EntityRegistry entityRegistry;
         private readonly SpriteRepository spriteRepository;
         private readonly SpriteBatch spriteBatch;
+        private readonly FontRepository fontRepository;
+        private readonly XInputService input;
+
+        private Font font;
 
         [Inject]
-        public DrawSystem(EntityRegistry entityRegistry,
-            SpriteRepository spriteRepository,
-            SpriteBatch spriteBatch)
+        public DrawSystem(SpriteRepository spriteRepository,
+            SpriteBatch spriteBatch,
+            FontRepository fontRepository,
+            [Hint(typeof(IInputService))] XInputService input)
         {
-            this.entityRegistry = entityRegistry;
             this.spriteRepository = spriteRepository;
             this.spriteBatch = spriteBatch;
+            this.fontRepository = fontRepository;
+            this.input = input;
         }
 
         public void Update(GameTime gameTime)
         {
-            
         }
 
         public void Draw(GameTime gameTime)
         {
-            spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointClamp);
-            entityRegistry.Loop((int entity, ref Sprite sprite, ref Transform transform) =>
-            {
-                spriteRepository.Draw(ref sprite, ref transform.pos, ref transform.size, Color.White, transform.rotation);
-            });
+            spriteBatch.Begin(SpriteSortMode.Deferred, default, SamplerState.PointClamp);
+            spriteRepository.DrawSpritesheetIndices(font, new Vector2(100, 100), "sheet", 16, 16, 4);
             spriteBatch.End();
+        }
+
+        public void ServiceReady()
+        {
+            font = fontRepository.GetFont("roboto");
         }
     }
 }

@@ -123,6 +123,15 @@
           "lib/netstandard1.3/System.ComponentModel.dll": {}
         }
       },
+      "System.Memory/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
       "System.Runtime/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -131,6 +140,56 @@
         },
         "compile": {
           "ref/netstandard1.5/System.Runtime.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview8.19405.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "DingoFont/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "MonoGame.Framework.DesktopGL.Core": "3.8.0.13"
+        },
+        "compile": {
+          "bin/placeholder/DingoFont.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DingoFont.dll": {}
+        }
+      },
+      "Svelto.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Memory": "4.5.2"
+        },
+        "compile": {
+          "bin/placeholder/Svelto.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Svelto.Common.dll": {}
+        }
+      },
+      "Svelto.ECS/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Svelto.Common": "1.0.0",
+          "System.Memory": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview8.19405.3"
+        },
+        "compile": {
+          "bin/placeholder/Svelto.ECS.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Svelto.ECS.dll": {}
         }
       }
     }
@@ -325,6 +384,27 @@
         "system.componentmodel.nuspec"
       ]
     },
+    "System.Memory/4.5.2": {
+      "sha512": "fvq1GNmUFwbKv+aLVYYdgu/+gc8Nu9oFujOxIjPrsf+meis9JBzTPDL6aP/eeGOz9yPj6rRLUbOjKMpsMEWpNg==",
+      "type": "package",
+      "path": "system.memory/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.2.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Runtime/4.1.0": {
       "sha512": "v6c/4Yaa9uWsq+JMhnOFewrYkgdNHNG2eMKuNqRn8P733rNXeRCGvV5FkkjBXn2dbVkPXOsO0xjsEeM1q2zC0g==",
       "type": "package",
@@ -416,14 +496,56 @@
         "system.runtime.4.1.0.nupkg.sha512",
         "system.runtime.nuspec"
       ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.6.0-preview8.19405.3": {
+      "sha512": "1EHM+Tp0/RlDu4cQpYl/+OsikV6DqVK9WXLZenKA0jNVgAvmKG4eD7czEIDR1w3IQjqywhIdIrqm1C4wJutVnA==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0-preview8.19405.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.6.0-preview8.19405.3.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "DingoFont/1.0.0": {
+      "type": "project",
+      "path": "../DingoFont/DingoFont.csproj",
+      "msbuildProject": "../DingoFont/DingoFont.csproj"
+    },
+    "Svelto.Common/1.0.0": {
+      "type": "project",
+      "path": "../Svelto.ECS/Svelto.Common/Svelto.Common.csproj",
+      "msbuildProject": "../Svelto.ECS/Svelto.Common/Svelto.Common.csproj"
+    },
+    "Svelto.ECS/1.0.0": {
+      "type": "project",
+      "path": "../Svelto.ECS/Svelto.ECS/Svelto.ECS.csproj",
+      "msbuildProject": "../Svelto.ECS/Svelto.ECS/Svelto.ECS.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
+      "DingoFont >= 1.0.0",
       "MonoGame.Extended >= 3.7.0",
       "MonoGame.Extended.Collisions >= 3.7.0",
       "MonoGame.Framework.DesktopGL.Core >= 3.8.0.13",
-      "SimpleInjector >= 4.9.2"
+      "SimpleInjector >= 4.9.2",
+      "Svelto.ECS >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -451,7 +573,14 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\fox\\RiderProjects\\Walkers\\DingoFont\\DingoFont.csproj": {
+              "projectPath": "C:\\Users\\fox\\RiderProjects\\Walkers\\DingoFont\\DingoFont.csproj"
+            },
+            "C:\\Users\\fox\\RiderProjects\\Walkers\\Svelto.ECS\\Svelto.ECS\\Svelto.ECS.csproj": {
+              "projectPath": "C:\\Users\\fox\\RiderProjects\\Walkers\\Svelto.ECS\\Svelto.ECS\\Svelto.ECS.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

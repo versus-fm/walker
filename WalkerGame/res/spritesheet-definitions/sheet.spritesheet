@@ -1,0 +1,13 @@
+﻿{
+  "spriteName": "sheet",
+  "spriteWidth": 32,
+  "spriteHeight": 32,
+  "names": {
+    "upperGrassLeft": 7,
+    "upperGrassMiddle": 8,
+    "upperGrassRight": 9,
+    "upperDirtLeft": 10,
+    "upperDirtMiddle": 11,
+    "upperDirtRight": 12
+  }
+}

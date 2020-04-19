@@ -1,9 +1,9 @@
 ﻿using System.IO;
 
-namespace WalkerGame
+namespace WalkerGame.Resource
 {
     public interface IResourceProcessor
     {
-        void Load(FileStream fs, string fileName);
+        void Load(string path, string fileName);
     }
 }

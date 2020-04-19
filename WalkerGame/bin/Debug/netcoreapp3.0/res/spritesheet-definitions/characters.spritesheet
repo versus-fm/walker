@@ -1,0 +1,22 @@
+﻿{
+  "spriteName": "characters",
+  "spriteWidth": 32,
+  "spriteHeight": 32,
+  "animation": [
+    {
+      "name": "playerRun",
+      "start": 0,
+      "end": 4
+    },
+    {
+      "name": "playerJump",
+      "start": 5,
+      "end": 8
+    },
+    {
+      "name": "playerHit",
+      "start": 9,
+      "end": 10
+    }
+  ]
+}

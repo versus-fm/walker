@@ -8,11 +8,13 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGame.Extended;
 using MonoGame.Extended.BitmapFonts;
+using Svelto.ECS;
 using WalkerGame.Component;
 using WalkerGame.Graphics;
 using WalkerGame.Logic;
 using WalkerGame.Metadata;
 using WalkerGame.Reflection;
+using WalkerGame.Resource;
 
 namespace WalkerGame
 {
@@ -20,10 +22,13 @@ namespace WalkerGame
     {
         private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
-        private EntityRegistry entities;
         private ObjectGraph objects;
         private PartManager parts;
-
+        private EnginesRoot enginesRoot;
+        private IEntityFactory entityFactory;
+        private IEntityFunctions entityFunctions;
+        
+        
         public Walker()
         {
             objects = new ObjectGraph(Assembly.GetCallingAssembly());
@@ -40,25 +45,37 @@ namespace WalkerGame
         {
             IsMouseVisible = true;
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            entities = new EntityRegistry();
             graphics.SynchronizeWithVerticalRetrace = false;
             IsFixedTimeStep = false;
 
             graphics.PreferredBackBufferWidth = 1280;
             graphics.PreferredBackBufferHeight = 720;
             graphics.ApplyChanges();
-            objects.DoOnAttribute<ComponentAttribute>((attribute, type) => entities.InvokeGenericMethod("RegisterComponent", new [] { type }, attribute.BufferType, 1024));
             
+            enginesRoot = new EnginesRoot(new SimpleSubmissionEntityViewScheduler());
+            entityFactory = enginesRoot.GenerateEntityFactory();
+            entityFunctions = enginesRoot.GenerateEntityFunctions();
+
             objects.RegisterInstance(spriteBatch);
             objects.RegisterInstance(graphics);
             objects.RegisterInstance(GraphicsDevice);
             objects.RegisterInstance(Content);
-            objects.RegisterInstance(entities);
-            
-            objects.DiscoverServices();
-            
-            objects.Verify();
+            objects.RegisterInstance(typeof(IEntityFactory), entityFactory);
+            objects.RegisterInstance(typeof(IEntityFunctions), entityFunctions);
 
+            objects.DiscoverServices();
+
+            objects.Verify();
+            
+            objects.DoOnAttribute<SystemAttribute>((attribute, type) =>
+            {
+                if (type.Implements<IEngine>())
+                {
+                    var engine = (IEngine)objects.Get(type);
+                    enginesRoot.AddEngine(engine);
+                }
+            });
+            
             parts = objects.Get<PartManager>();
             
             parts.Load();
@@ -67,22 +84,9 @@ namespace WalkerGame
             var repository = objects.Get<SpriteRepository>();
             repository.PlaceInternalCache();
 
-
-            for (int x = 0; x < 20; x++)
-            {
-                for (int y = 0; y < 20; y++)
-                {
-                    var ent = entities.CreateEntity();
-                    entities.AddComponent(ent, new Transform
-                    {
-                        pos = new Vector2(100 + x*32, 100 + y*32),
-                        rotation = 0f,
-                        size = new Vector2(32)
-                    });
-                    entities.AddComponent(ent, repository.CreateSprite("stone"));
-                }
-            }
-
+            
+            
+            parts.Ready();
         }
 
         protected override void UnloadContent()

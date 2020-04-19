@@ -1,10 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Microsoft.Xna.Framework.Graphics;
 using WalkerGame.Graphics;
 using WalkerGame.Metadata;
+using WalkerGame.Reflection;
 
-namespace WalkerGame
+namespace WalkerGame.Resource
 {
     [Service]
     public class ResourceLoader : PostConstruct
@@ -30,15 +33,42 @@ namespace WalkerGame
 
         public void Process()
         {
-            foreach (var file in files)
+            var collected = new List<(IResourceProcessor, string)>();
+            foreach (var processorPair in processors)
+            {
+                var processor = processorPair.Value;
+                var filetype = processorPair.Key;
+                if (processor.GetType().TryAttribute<ResourceProcessorAttribute>(out var attribute))
+                {
+                    if (attribute.RunBefore != null)
+                    {
+                        var added = false;
+                        for (var i = 0; i < collected.Count; i++)
+                        {
+                            if (collected[i].Item1.GetType() != attribute.RunBefore) continue;
+                            collected.Insert(i, (processor, filetype));
+                            added = true;
+                            break;
+                        }
+                        if (!added)
+                            collected.Add((processor, filetype));
+                    }
+                    else
+                    {
+                        collected.Add((processor, filetype));
+                    }
+                }
+            }
+
+            var sortedFiles = collected.SelectMany((tuple, i) => files.Where(file =>
+                tuple.Item2.Equals(Path.GetExtension(file), StringComparison.CurrentCultureIgnoreCase))).Distinct().ToList();
+            
+            foreach (var file in sortedFiles)
             {
                 var extension = Path.GetExtension(file);
                 if (processors.TryGetValue(extension, out var processor))
                 {
-                    using (var fs = new FileStream(file, FileMode.Open))
-                    {
-                        processor.Load(fs, Path.GetFileNameWithoutExtension(file));
-                    }
+                    processor.Load(file, Path.GetFileNameWithoutExtension(file));
                 }
             }
         }
@@ -47,10 +77,12 @@ namespace WalkerGame
         {
             graph.DoOnAttribute<ResourceProcessorAttribute>((attribute, type) =>
             {
+                var processor = (IResourceProcessor)graph.Construct(type);
+                Console.WriteLine(processor.GetType().Name);
                 for (var i = 0; i < attribute.FileTypes.Length; i++)
                 {
                     var extension = attribute.FileTypes[i];
-                    processors.Add(extension, (IResourceProcessor)graph.Construct(type));
+                    processors.Add(extension, processor);
                 }
             });
         }

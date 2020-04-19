@@ -2,11 +2,12 @@
 using Microsoft.Xna.Framework.Graphics;
 using WalkerGame.Graphics;
 using WalkerGame.Metadata;
+using WalkerGame.Resource;
 
-namespace WalkerGame.Processors
+namespace WalkerGame.Resource.Processors
 {
-    [ResourceProcessor(".png", ".bmp")]
-    public class Texture2DProcessor : IResourceProcessor
+    [ResourceProcessor(typeof(SpritesheetProcessor), ".png", ".bmp")]
+    public class Texture2DProcessor : ResourceFileStreamProcessor
     {
         private readonly GraphicsDevice graphicsDevice;
         private readonly SpriteRepository spriteRepository;
@@ -18,7 +19,7 @@ namespace WalkerGame.Processors
             this.graphicsDevice = graphicsDevice;
             this.spriteRepository = spriteRepository;
         }
-        public void Load(FileStream fs, string fileName)
+        protected override void Load(FileStream fs, string fileName)
         {
             spriteRepository.PreRegister(Texture2D.FromStream(graphicsDevice, fs), fileName);
         }
